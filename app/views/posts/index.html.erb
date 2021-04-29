@@ -29,7 +29,7 @@
   <%= post.content %>
 
 </textarea> <br>
-
+<p><b>Posted by:</b> <%= post.user.name %></p>
 <a href="<%= edit_post_path(post.id) %> " class="bt-btn-primary">Edit</a>
 
 <td><%= link_to 'Delete post', post_path(post.id), method: :delete,data: { confirm: 'Can I really edit it?' } %></td>
